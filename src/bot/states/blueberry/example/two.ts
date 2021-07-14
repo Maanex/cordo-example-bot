@@ -4,7 +4,7 @@ import { ButtonStyle, ComponentType, InteractionApplicationCommandCallbackData, 
 export default function (i: GenericInteraction): InteractionApplicationCommandCallbackData {
   return {
     title: 'Not actually a Blueberry',
-    description: 'This is the page for the strawberry.',
+    description: 'This is the page for the strawberry. Here is your username in reverse: ' + i.userData.nameReversed,
     components: [
       {
         type: ComponentType.BUTTON,
